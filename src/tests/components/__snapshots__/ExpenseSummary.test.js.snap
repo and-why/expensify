@@ -3,8 +3,10 @@
 exports[`Should return ExpenseSummary with 0 expense 1`] = `
 <div>
   <p>
-    Viewing 1 expense totalling 
-    $0.00
+    Viewing 
+    12
+     expenses totalling 
+    $222,342.22
   </p>
 </div>
 `;
@@ -13,7 +15,7 @@ exports[`Should return ExpenseSummary with expense 1`] = `
 <div>
   <p>
     Viewing 1 expense totalling 
-    $0.00
+    $2.22
   </p>
 </div>
 `;
