@@ -4,16 +4,16 @@ import { EditExpense } from '../../components/EditExpense';
 import expenses from '../fixtures/expenses';
 
 
-let editExpense, removeExpense, history, wrapper;
+let editExpense, startRemoveExpense, history, wrapper;
 
 beforeEach(() => {
   editExpense = jest.fn();
-  removeExpense = jest.fn();
+  startRemoveExpense = jest.fn();
   history = { push: jest.fn() }
   wrapper = shallow(
     <EditExpense 
       editExpense={editExpense} 
-      startRemoveExpense={removeExpense} 
+      startRemoveExpense={startRemoveExpense} 
       history={history}
       expense={expenses[2]}
     />
@@ -34,7 +34,7 @@ test('Should handle editExpense', () => {
 test('Should handle remove with onRemove', () => {
   wrapper.find('button').simulate('click');
   expect(history.push).toHaveBeenLastCalledWith('/');
-  expect(removeExpense).toHaveBeenLastCalledWith({
+  expect(startRemoveExpense).toHaveBeenLastCalledWith({
     id: expenses[2].id
   });
 });
