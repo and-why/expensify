@@ -20,10 +20,18 @@ exports[`should render header correctly 1`] = `
         </h1>
       </Link>
       <button
-        className="btn btn--clear"
+        className="header__profile btn btn--clear"
         onClick={[Function]}
       >
-        Logout
+        <div
+          className="header__profile--photo"
+        >
+          <img
+            alt=""
+            src={null}
+          />
+        </div>
+         Logout
       </button>
     </div>
   </div>

@@ -7,7 +7,7 @@ import AppRouter, { history } from "./routers/AppRouter";
 import configureStore from "./store/configureStore";
 import { startSetExpenses } from "./actions/expenses";
 //import { setTextFilter, sortByDate, sortByAmount, setStartDate, setEndDate } from './actions/filters';
-import { login, logout } from "./actions/auth";
+import { login, logout, userPhoto } from "./actions/auth";
 import expensesReducer from "./reducers/expenses";
 import filtersReducer from "./reducers/filters";
 import getVisibleExpenses from "./selectors/expenses";
