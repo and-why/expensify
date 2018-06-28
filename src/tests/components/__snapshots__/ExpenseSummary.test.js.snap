@@ -16,11 +16,20 @@ exports[`Should return ExpenseSummary with 0 expense 1`] = `
       </span>
        
       expenses
-       totalling 
+       
+      totalling 
       <span>
         $222,342.22
       </span>
     </h1>
+    <p>
+      There are are total of 
+       
+      expenses
+       
+      recorded, totalling in 
+      $0.00
+    </p>
     <div
       className="page-header__actions"
     >
@@ -52,11 +61,20 @@ exports[`Should return ExpenseSummary with expense 1`] = `
       </span>
        
       expense
-       totalling 
+       
+      totalling 
       <span>
         $2.22
       </span>
     </h1>
+    <p>
+      There are are total of 
+       
+      expenses
+       
+      recorded, totalling in 
+      $0.00
+    </p>
     <div
       className="page-header__actions"
     >

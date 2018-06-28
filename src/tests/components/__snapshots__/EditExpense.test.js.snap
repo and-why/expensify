@@ -30,16 +30,20 @@ exports[`should render EditExpense correctly 1`] = `
       }
       onSubmit={[Function]}
     />
-    <button
-      className="btn btn--red"
-      onClick={[Function]}
+    <div
+      className="btn-wrapper"
     >
-      Remove Expense
-    </button>
-    <RemoveModal
+      <button
+        className="btn btn--red btn--fw"
+        onClick={[Function]}
+      >
+        Remove Expense
+      </button>
+    </div>
+    <CustomModal
       handelCloseModal={[Function]}
+      modalAction={[Function]}
       modalOpen={false}
-      onRemove={[Function]}
     />
   </div>
 </div>

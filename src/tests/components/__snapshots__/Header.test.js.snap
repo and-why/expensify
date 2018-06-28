@@ -16,7 +16,7 @@ exports[`should render header correctly 1`] = `
         to="/dashboard"
       >
         <h1>
-          Expensify
+          Expense Tracker
         </h1>
       </Link>
       <button
@@ -31,8 +31,14 @@ exports[`should render header correctly 1`] = `
             src={null}
           />
         </div>
-         Logout
+         
+        Logout
       </button>
+      <CustomModal
+        handelCloseModal={[Function]}
+        modalAction={[Function]}
+        modalOpen={false}
+      />
     </div>
   </div>
 </header>

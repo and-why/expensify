@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import ExpenseForm from "./ExpenseForm";
 import { startEditExpense, startRemoveExpense } from "../actions/expenses";
-import RemoveModal from "./RemoveModal";
+import CustomModal from "./customModal";
 
 export class EditExpense extends React.Component {
   state = {
@@ -16,7 +16,9 @@ export class EditExpense extends React.Component {
     this.props.startRemoveExpense({ id: this.props.expense.id });
     this.props.history.push("/");
   };
-
+  handelGoBack = () => {
+    this.props.history.push("/");
+  };
   handelOpenModal = () => {
     this.setState({ modalOpen: true });
   };
@@ -34,13 +36,20 @@ export class EditExpense extends React.Component {
         </div>
         <div className="content-container">
           <ExpenseForm expense={this.props.expense} onSubmit={this.onSubmit} />
-          <button className="btn btn--red" onClick={this.handelOpenModal}>
-            Remove Expense
-          </button>
-          <RemoveModal
+          <div className="btn-wrapper">
+            <button
+              className="btn btn--red btn--fw"
+              onClick={this.handelOpenModal}
+            >
+              Remove Expense
+            </button>
+            {/* <button className="btn btn--fw" onClick={this.handelGoBack}>Back</button> */}
+          </div>
+
+          <CustomModal
             modalOpen={this.state.modalOpen}
             handelCloseModal={this.handelCloseModal}
-            onRemove={this.onRemove}
+            modalAction={this.onRemove}
           />
         </div>
       </div>

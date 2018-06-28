@@ -92,8 +92,8 @@ export default class ExpenseForm extends React.Component {
           onChange={this.onNoteChange}
         />
         <div>
-          <button className="btn">
-            {this.state.description ? "Save Expense" : "Add Expense"}
+          <button className="btn btn--fw">
+            {this.state.description === "" ? "Add Expense" : "Save Expense"}
           </button>
         </div>
       </form>
