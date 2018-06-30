@@ -13,10 +13,10 @@ const CustomModal = props => (
   >
     <h3>Are You Sure?</h3>
     <button className="btn btn--red" onClick={props.modalAction}>
-      Confirm
+      Yes
     </button>
-    <button className="btn btn--clear" onClick={props.handelCloseModal}>
-      Cancel
+    <button className="btn btn--light-blue" onClick={props.handelCloseModal}>
+      No
     </button>
   </Modal>
 );

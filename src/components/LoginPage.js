@@ -7,10 +7,10 @@ export const LoginPage = ({ startLogin, startLoginFB }) => (
     <div className="box-layout__box">
       <h1 className="box-layout__title">Expense Tracker</h1>
       <p>Get your expenses in order ready for Tax Time.</p>
-      <button className="btn" onClick={startLogin}>
+      <button className="btn btn--google" onClick={startLogin}>
         Login with Google
       </button>
-      <button className="btn" onClick={startLoginFB}>
+      <button className="btn btn--facebook" onClick={startLoginFB}>
         Login with Facebook
       </button>
     </div>

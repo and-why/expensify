@@ -15,15 +15,17 @@
   opacity:0;
 }
 .remove--modal {
-  background:$dark-blue;
-  color:white;
-  max-width:30rem;
+  background:$off-white;
+  box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.2);
+  color:$grey;
+  width:30rem;
   outline:none;
-  padding:$m-size;
   text-align: center;
+
 }
 .remove--modal .btn {
-  margin:$s-size;
+  padding:$m-size;
+  width:50%;
 }
 .modal__title {
   margin:0 0 $m-size;
