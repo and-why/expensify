@@ -17,10 +17,10 @@ export class Header extends React.Component {
   state = {
     modalOpen: false
   };
-  handelOpenModal = () => {
+  handleOpenModal = () => {
     this.setState({ modalOpen: true });
   };
-  handelCloseModal = () => {
+  handleCloseModal = () => {
     this.setState({ modalOpen: false });
   };
   onLogout = () => {
@@ -36,7 +36,7 @@ export class Header extends React.Component {
             </Link>
             <button
               className="header__profile btn btn--clear"
-              onClick={this.handelOpenModal}
+              onClick={this.handleOpenModal}
             >
               <div className="header__profile--photo">
                 <img src={userImageURL} alt="" />
@@ -45,7 +45,7 @@ export class Header extends React.Component {
             </button>
             <CustomModal
               modalOpen={this.state.modalOpen}
-              handelCloseModal={this.handelCloseModal}
+              handleCloseModal={this.handleCloseModal}
               modalAction={this.onLogout}
             />
           </div>

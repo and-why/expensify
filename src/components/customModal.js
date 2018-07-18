@@ -4,7 +4,7 @@ import Modal from "react-modal";
 const CustomModal = props => (
   <Modal
     isOpen={props.modalOpen}
-    onRequestClose={props.handelCloseModal}
+    onRequestClose={props.handleCloseModal}
     contentLabel="Remove Expense"
     closeTimeoutMS={200}
     className="remove--modal"
@@ -15,7 +15,7 @@ const CustomModal = props => (
     <button className="btn btn--red" onClick={props.modalAction}>
       Yes
     </button>
-    <button className="btn btn--light-blue" onClick={props.handelCloseModal}>
+    <button className="btn btn--light-blue" onClick={props.handleCloseModal}>
       No
     </button>
   </Modal>

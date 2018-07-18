@@ -16,13 +16,13 @@ export class EditExpense extends React.Component {
     this.props.startRemoveExpense({ id: this.props.expense.id });
     this.props.history.push("/");
   };
-  handelGoBack = () => {
+  handleGoBack = () => {
     this.props.history.push("/");
   };
-  handelOpenModal = () => {
+  handleOpenModal = () => {
     this.setState({ modalOpen: true });
   };
-  handelCloseModal = () => {
+  handleCloseModal = () => {
     this.setState({ modalOpen: false });
   };
 
@@ -39,7 +39,7 @@ export class EditExpense extends React.Component {
           <div className="btn-wrapper">
             <button
               className="btn btn--red btn--fw"
-              onClick={this.handelOpenModal}
+              onClick={this.handleOpenModal}
             >
               Remove Expense
             </button>
@@ -48,7 +48,7 @@ export class EditExpense extends React.Component {
 
           <CustomModal
             modalOpen={this.state.modalOpen}
-            handelCloseModal={this.handelCloseModal}
+            handleCloseModal={this.handleCloseModal}
             modalAction={this.onRemove}
           />
         </div>
